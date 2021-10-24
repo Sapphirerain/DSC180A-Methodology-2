@@ -24,9 +24,9 @@ RUN apt-get -y install aria2 nmap traceroute
 # 3) install packages using notebook user
 USER jovyan
 
-RUN conda install -y geopandas
+# RUN conda install -y geopandas
 
-RUN pip install --no-cache-dir babypandas
+RUN pip install --no-cache-dir geopandas babypandas
 
 # Override command to disable running jupyter notebook at launch
 # CMD ["/bin/bash"]
